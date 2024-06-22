@@ -1,10 +1,15 @@
-import { Button } from "./components/atoms/Button/Button"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Home from "./routes/Home"
 
 function App() {
 
   return (
     <>
-      <Button>Button</Button>
+      <BrowserRouter >
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
